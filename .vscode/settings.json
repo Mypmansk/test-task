@@ -1,0 +1,19 @@
+{
+  "workbench.colorTheme": "Tokyo Night Storm",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 15,
+  "terminal.integrated.fontSize": 15,
+  "debug.console.fontSize": 15,
+  "markdown.preview.fontSize": 15,
+  "git.autofetch": true,
+  "editor.detectIndentation": false,
+  "window.zoomLevel": 0,
+  "editor.insertSpaces": false,
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.wordWrap": "off"
+}

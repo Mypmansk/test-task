@@ -1,0 +1,103 @@
+.order-form__scale {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.scale__input {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+.scale__input::-webkit-slider-runnable-track {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid $primary-color;
+  border-radius: 3px;
+}
+
+.scale__input::-webkit-slider-thumb {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  -webkit-appearance: none;
+  margin-top: -10px;
+  background: #42a9ed;
+  border: 3px solid #286690;
+  border-radius: 24px;
+}
+
+.scale__input::-moz-range-track {
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+}
+
+.scale__input::-moz-range-thumb {
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+  background: #42a9ed;
+  border: 3px solid #286690;
+  border-radius: 18px;
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+  .order-form__scale {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .order-form__scale {
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+}
+@media (min-width: 640px) and (max-width: 768px) {
+  .order-form__scale {
+    width: 370px;
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+  .scale__description {
+    margin-bottom: 10px;
+  }
+  .scale__result {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  .order-form__scale {
+    width: 370px;
+    grid-column-start: auto;
+    grid-column-end: auto;
+  }
+  .scale__description {
+    margin-bottom: 10px;
+  }
+  .scale__result {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .order-form__scale {
+    width: 100%;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    font-size: 14px;
+  }
+  .scale__description {
+    margin-bottom: 10px;
+  }
+  .scale__result {
+    margin-bottom: 10px;
+  }
+}

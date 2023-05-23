@@ -1,0 +1,32 @@
+.order-form__input {
+  box-sizing: border-box;
+  width: 370px;
+  height: 48px;
+  padding: 12px 10px;
+  border: 1px solid $primary-color;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.order-form__input::placeholder {
+  color: $main-backgroun-color;
+}
+
+@media (min-width: 980px) and (max-width: 1199px) {
+  .order-form__input {
+    width: 100%;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .order-form__input {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .order-form__input {
+    width: 100%;
+  }
+}

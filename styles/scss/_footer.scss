@@ -1,0 +1,95 @@
+.footer {
+  background: #3d4050;
+  height: 80px;
+  color: $footer-payment-color;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  gap: 10px;
+  margin: auto;
+
+  width: 100%;
+  height: 100%;
+  align-items: center;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.payment,
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  gap: 40px;
+}
+
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment__item,
+.contacts__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.contacts__link {
+  color: $footer-payment-color;
+  text-decoration: none;
+}
+.contacts__link:hover {
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.payment::before {
+  content: "";
+  height: 18px;
+  border-left: 1px solid $footer-payment-color;
+}
+
+.payment::after {
+  content: "";
+  height: 18px;
+  border-left: 1px solid $footer-payment-color;
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .payment,
+  .contacts {
+    gap: 20px;
+  }
+}
+@media (min-width: 769px) and (max-width: 979px) {
+  .payment,
+  .contacts {
+    gap: 10px;
+  }
+  .payment::before {
+    content: "";
+    height: 32px;
+    border-left: 1px solid $footer-payment-color;
+  }
+
+  .payment::after {
+    content: "";
+    height: 32px;
+    border-left: 1px solid $footer-payment-color;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .payment,
+  .contacts {
+    gap: 5px;
+  }
+}
